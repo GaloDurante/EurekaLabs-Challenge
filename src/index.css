@@ -1,0 +1,49 @@
+/* reset.css */
+
+/* Aplicar un box-sizing consistente a todos los elementos */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Establecer márgenes y relleno en el cuerpo para evitar desplazamientos */
+body {
+  margin: 0;
+  padding: 0;
+}
+
+/* Eliminar la lista de puntos en elementos no ordenados */
+ul {
+  list-style: none;
+}
+
+/* Restablecer la fuente y los márgenes en elementos de encabezado */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 1em;
+  font-weight: normal;
+}
+
+/* Restablecer el estilo de enlace para eliminar la decoración y establecer el color */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Restablecer la lista de descripción */
+dl,
+dt,
+dd {
+  margin: 0;
+}
+
+button {
+  border: none;
+}
