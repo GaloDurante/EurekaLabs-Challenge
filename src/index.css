@@ -1,3 +1,6 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
 /* reset.css */
 
 /* Aplicar un box-sizing consistente a todos los elementos */
