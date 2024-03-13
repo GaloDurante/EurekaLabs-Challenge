@@ -1,7 +1,13 @@
+import Header from './components/Header';
+import Home from './components/Home';
+import Footer from './components/Footer';
+
 const App = () => {
   return (
-    <div className="text-3xl">
-      <h1>Hola Mundo!</h1>
+    <div>
+      <Header />
+      <Home />
+      <Footer />
     </div>
   );
 };
