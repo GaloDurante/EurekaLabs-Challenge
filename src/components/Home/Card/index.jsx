@@ -6,7 +6,7 @@ import styles from './index.module.css';
 const Card = ({ data }) => {
   const [activeItem, setActiveItem] = useState(0);
   return (
-    <div
+    <article
       className={`flex flex-col md:flex-row bg-white rounded-lg w-full mb-10 max-w-72 min-w-72 md:max-w-none`}
     >
       <div className="md:w-60 md:border-r-2 border-b-2 border-gray-100 p-6 w-full flex flex-col items-center justify-center">
@@ -63,7 +63,7 @@ const Card = ({ data }) => {
               <span
                 className={`${
                   data.presentations[activeItem].availability
-                    ? 'bg-green-400'
+                    ? 'bg-green-600'
                     : 'bg-red-400'
                 } text-white font-normal text-center rounded-lg py-1 px-2`}
               >
@@ -75,7 +75,7 @@ const Card = ({ data }) => {
           </div>
         </div>
       </div>
-    </div>
+    </article>
   );
 };
 
