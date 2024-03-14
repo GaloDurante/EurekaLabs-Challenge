@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { fetchData } from '../../api/fetchData';
 import { prepareData } from '../../helpers/prepareData';
+import Card from './Card';
 const Home = () => {
   const [products, setProducts] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -21,7 +22,7 @@ const Home = () => {
   }, []);
 
   return (
-    <main className="px-20 py-6 bg-gray-200">
+    <main className="px-2 md:px-20 py-6 bg-gray-200">
       {loading && (
         <div className="min-h-screen text-3xl flex justify-center items-center">
           Loading...
@@ -39,7 +40,9 @@ const Home = () => {
             <span className="font-normal">{products[0]?.variants?.length}</span>
           </p>
           <div>
-            <p>Home section</p>
+            {products[0].variants.map((item, index) => (
+              <Card key={index} data={item} />
+            ))}
           </div>
         </div>
       )}
