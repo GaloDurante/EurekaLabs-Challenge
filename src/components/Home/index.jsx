@@ -34,8 +34,8 @@ const Home = () => {
         </div>
       )}
       {!loading && !error && (
-        <div className="flex flex-col items-center md:block">
-          <p className="font-bold text-center md:text-right mb-4">
+        <div className="flex flex-col items-center justify-center">
+          <p className="font-bold text-center md:text-left mb-4">
             Total Results:{' '}
             <span className="font-normal">{products[0]?.variants?.length}</span>
           </p>
